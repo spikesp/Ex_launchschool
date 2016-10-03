@@ -5,7 +5,7 @@ words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
 result = {}
 
 words.each do |word|
-	key = word.split('').sort.join
+	key = word.split("").sort.join
 	if result.has_key?(key)
 		result[key].push(word)
 	else
@@ -14,6 +14,7 @@ words.each do |word|
 end
 
 result.each do |k, v|
-	puts "------"
+	puts "======="
 	p v
 end
+
